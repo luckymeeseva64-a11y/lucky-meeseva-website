@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b6b53">
+  <meta name="description" content="Lucky MeeSeva helps customers in Hyderabad with MeeSeva and online application assistance. Contact us on WhatsApp.">
+  <title>Lucky MeeSeva | Online Services in Hyderabad</title>
+  <style>
+    :root{--green:#087653;--deep:#064e3b;--mint:#e8f7ef;--ink:#152820;--muted:#61736b;--line:#dce9e1;--white:#fff;--gold:#ffcf5a}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#f7fbf8;line-height:1.55}
+    a{color:inherit} .wrap{width:min(1120px,92%);margin:auto}
+    header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 0}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:850;letter-spacing:-.4px}
+    .logo{width:42px;height:42px;border-radius:13px;background:var(--green);color:white;display:grid;place-items:center;font-size:22px;box-shadow:0 5px 14px #0876532b}
+    .brand small{display:block;color:var(--muted);font-weight:600;font-size:11px;letter-spacing:.2px}
+    .navright{display:flex;align-items:center;gap:10px}
+    select{font:inherit;padding:9px 10px;border:1px solid var(--line);border-radius:10px;background:white;color:var(--ink);max-width:140px}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:12px 17px;border-radius:12px;background:var(--green);color:white;font-weight:750;text-decoration:none;border:0;cursor:pointer;box-shadow:0 5px 12px #0876531c}
+    .btn:hover{background:var(--deep)} .btn.secondary{background:white;color:var(--green);border:1px solid var(--line);box-shadow:none}
+    .hero{padding:56px 0 42px;background:radial-gradient(ellipse at 85% 15%,#c9f2d9 0,transparent 38%),linear-gradient(135deg,#f0fbf4,#fff 60%)}
+    .heroGrid{display:grid;grid-template-columns:1.25fr .75fr;gap:34px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;background:#d9f5e5;color:var(--deep);font-weight:800;padding:7px 11px;border-radius:999px;font-size:12px}
+    h1{font-size:clamp(36px,5vw,58px);line-height:1.06;letter-spacing:-1.8px;margin:17px 0}
+    .hero p{font-size:18px;color:var(--muted);max-width:620px}
+    .heroActions{display:flex;flex-wrap:wrap;gap:11px;margin-top:23px}
+    .heroCard{background:white;border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 20px 55px #104b2a0d}
+    .heroCard h3{margin:0 0 15px;font-size:18px}
+    .quick{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #edf3ef}.quick:last-child{border:0}
+    .quickIcon{height:40px;width:40px;display:grid;place-items:center;border-radius:12px;background:var(--mint);font-size:20px;flex-shrink:0}
+    .quick b{display:block;font-size:14px}.quick span{font-size:12px;color:var(--muted)}
+    section{padding:48px 0}.sectionHead{text-align:center;max-width:700px;margin:0 auto 28px}.sectionHead h2{font-size:clamp(27px,3vw,37px);letter-spacing:-.8px;margin:0 0 8px}.sectionHead p{margin:0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .service{background:white;border:1px solid var(--line);border-radius:18px;padding:21px;transition:transform .2s,box-shadow .2s}
+    .service:hover{transform:translateY(-3px);box-shadow:0 12px 28px #104b2a0d}
+    .service .ico{font-size:26px;margin-bottom:10px}.service h3{font-size:16px;margin:0 0 6px}.service p{font-size:13px;color:var(--muted);margin:0}
+    .steps{background:#edf8f1}.stepGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .step{background:white;padding:22px;border-radius:18px;border:1px solid var(--line)}.num{width:34px;height:34px;background:var(--green);color:white;border-radius:11px;display:grid;place-items:center;font-weight:800;margin-bottom:12px}.step h3{margin:0 0 5px;font-size:16px}.step p{margin:0;color:var(--muted);font-size:14px}
+    .contactBox{background:var(--deep);color:white;border-radius:26px;padding:36px;display:flex;align-items:center;justify-content:space-between;gap:25px}.contactBox p{color:#d4e9de;margin-bottom:0}.contactBox .btn{background:#25d366;color:#063b29;box-shadow:none;white-space:nowrap}.contactBox h2{font-size:clamp(26px,3vw,36px);margin:0}
+    footer{padding:25px 0 88px;color:var(--muted);font-size:12px}.footerRow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px}
+    .notice{background:#fff8e5;border:1px solid #f5e2a9;border-radius:12px;padding:12px 14px;font-size:12px;color:#6e5720;margin-top:20px}
+    .waFloat{position:fixed;bottom:18px;right:18px;z-index:20;background:#25d366;color:#073b24;border-radius:999px;padding:13px 17px;text-decoration:none;font-weight:850;box-shadow:0 8px 25px #0002;display:flex;align-items:center;gap:8px}
+    @media(max-width:760px){.hero{padding:38px 0 30px}.heroGrid{grid-template-columns:1fr}.heroCard{padding:18px}.grid{grid-template-columns:repeat(2,1fr)}.stepGrid{grid-template-columns:1fr}.contactBox{padding:25px;align-items:flex-start;flex-direction:column}.nav{align-items:flex-start}.navright{gap:6px}.navright .btn{padding:9px 11px;font-size:12px}.brand{font-size:14px}.logo{width:37px;height:37px}}
+    @media(max-width:430px){.grid{grid-template-columns:1fr}.hero p{font-size:16px}.navright select{max-width:105px;font-size:12px}.waFloat{right:12px;bottom:12px;padding:12px 14px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#" aria-label="Lucky MeeSeva home">
+      <span class="logo">✓</span><span>Lucky MeeSeva<small data-i18n="tagline">Online Services • Hyderabad</small></span>
+    </a>
+    <div class="navright">
+      <select id="language" aria-label="Choose language">
+        <option value="en">English</option><option value="te">తెలుగు</option><option value="hi">हिन्दी</option>
+      </select>
+      <a class="btn" data-wa data-i18n="navWhatsApp" href="https://wa.me/919121724138?text=Hello%20Lucky%20MeeSeva%2C%20I%20need%20help%20with%20an%20online%20service." target="_blank" rel="noopener">WhatsApp us ↗</a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="wrap heroGrid">
+      <div>
+        <span class="eyebrow" data-i18n="eyebrow">● Helpful service • Easy contact</span>
+        <h1 data-i18n="headline">Your online service assistance, made simple.</h1>
+        <p data-i18n="intro">Need help with an application or online service? Explore the services below and message Lucky MeeSeva on WhatsApp. We assist customers across Hyderabad.</p>
+        <div class="heroActions">
+          <a class="btn" data-wa data-i18n="heroWhatsApp" href="https://wa.me/919121724138?text=Hello%20Lucky%20MeeSeva%2C%20I%20need%20help%20with%20an%20online%20service." target="_blank" rel="noopener">🟢 Contact on WhatsApp</a>
+          <a class="btn secondary" href="#services" data-i18n="viewServices">View services ↓</a>
+        </div>
+        <div class="notice" data-i18n="notice">Independent online-service assistance. Lucky MeeSeva is not the official government MeeSeva website. Applications and approvals are subject to the relevant department's rules.</div>
+      </div>
+      <aside class="heroCard">
+        <h3 data-i18n="quickTitle">How can we help?</h3>
+        <div class="quick"><div class="quickIcon">🪪</div><div><b data-i18n="quick1">ID and certificate assistance</b><span data-i18n="quick1sub">Aadhaar, voter ID and certificates</span></div></div>
+        <div class="quick"><div class="quickIcon">📄</div><div><b data-i18n="quick2">Government application support</b><span data-i18n="quick2sub">Licences, ration card and schemes</span></div></div>
+        <div class="quick"><div class="quickIcon">🎓</div><div><b data-i18n="quick3">Education and exam forms</b><span data-i18n="quick3sub">Scholarships and exam applications</span></div></div>
+        <div class="quick"><div class="quickIcon">💬</div><div><b data-i18n="quick4">Simple WhatsApp enquiry</b><span data-i18n="quick4sub">Tell us what service you need</span></div></div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sectionHead"><h2 data-i18n="servicesTitle">Services we can help with</h2><p data-i18n="servicesIntro">Choose a category and contact us on WhatsApp to ask about the process, documents and applicable charges.</p></div>
+      <div class="grid">
+        <article class="service"><div class="ico">🪪</div><h3 data-i18n="s1">Aadhaar assistance</h3><p data-i18n="d1">Address update guidance and related online requests.</p></article>
+        <article class="service"><div class="ico">🗳️</div><h3 data-i18n="s2">Voter ID</h3><p data-i18n="d2">New registration and correction application assistance.</p></article>
+        <article class="service"><div class="ico">🍚</div><h3 data-i18n="s3">Ration card</h3><p data-i18n="d3">New card and eligible member addition assistance.</p></article>
+        <article class="service"><div class="ico">📃</div><h3 data-i18n="s4">Certificates</h3><p data-i18n="d4">Income, residence and other available certificate services.</p></article>
+        <article class="service"><div class="ico">🏪</div><h3 data-i18n="s5">Business licences</h3><p data-i18n="d5">Trade, food (FSSAI) and labour-related licence assistance.</p></article>
+        <article class="service"><div class="ico">🎓</div><h3 data-i18n="s6">Scholarships & exams</h3><p data-i18n="d6">Scholarship forms, exam registrations and application help.</p></article>
+        <article class="service"><div class="ico">🛂</div><h3 data-i18n="s7">Passport assistance</h3><p data-i18n="d7">Appointment and application form guidance.</p></article>
+        <article class="service"><div class="ico">🏛️</div><h3 data-i18n="s8">MeeSeva services</h3><p data-i18n="d8">Assistance with available MeeSeva-related applications.</p></article>
+        <article class="service"><div class="ico">💻</div><h3 data-i18n="s9">Other online services</h3><p data-i18n="d9">Ask us about other forms and online application support.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps">
+    <div class="wrap">
+      <div class="sectionHead"><h2 data-i18n="stepsTitle">Contact us in 3 easy steps</h2><p data-i18n="stepsIntro">Start with a message. We'll explain the next steps before you proceed.</p></div>
+      <div class="stepGrid">
+        <div class="step"><div class="num">1</div><h3 data-i18n="step1">Choose your service</h3><p data-i18n="step1d">Find the service category you need on this page.</p></div>
+        <div class="step"><div class="num">2</div><h3 data-i18n="step2">Message on WhatsApp</h3><p data-i18n="step2d">Send your question and ask which documents may be required.</p></div>
+        <div class="step"><div class="num">3</div><h3 data-i18n="step3">Confirm before applying</h3><p data-i18n="step3d">Confirm process, official fees and service charges before sharing documents or paying.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contactBox">
+        <div><h2 data-i18n="contactTitle">Need help with an online service?</h2><p data-i18n="contactText">Message Lucky MeeSeva on WhatsApp to get started.</p></div>
+        <a class="btn" data-wa data-i18n="contactBtn" href="https://wa.me/919121724138?text=Hello%20Lucky%20MeeSeva%2C%20I%20need%20help%20with%20an%20online%20service." target="_blank" rel="noopener">🟢 Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap footerRow">
+    <div><strong>Lucky MeeSeva</strong><br><span data-i18n="footerSub">Online service assistance • Hyderabad, Telangana</span></div>
+    <div data-i18n="footerNote">Always verify official requirements and fees. Never share OTPs or passwords.</div>
+    <div>© <span id="year"></span> Lucky MeeSeva</div>
+  </div>
+</footer>
+<a class="waFloat" data-wa href="https://wa.me/919121724138?text=Hello%20Lucky%20MeeSeva%2C%20I%20need%20help%20with%20an%20online%20service." target="_blank" rel="noopener" aria-label="Contact Lucky MeeSeva on WhatsApp">☏ <span data-i18n="floatWhatsApp">WhatsApp</span></a>
+<script>
+const phone = "919121724138";
+const messages = {
+en:{tagline:"Online Services • Hyderabad",navWhatsApp:"WhatsApp us ↗",eyebrow:"● Helpful service • Easy contact",headline:"Your online service assistance, made simple.",intro:"Need help with an application or online service? Explore the services below and message Lucky MeeSeva on WhatsApp. We assist customers across Hyderabad.",heroWhatsApp:"🟢 Contact on WhatsApp",viewServices:"View services ↓",notice:"Independent online-service assistance. Lucky MeeSeva is not the official government MeeSeva website. Applications and approvals are subject to the relevant department's rules.",quickTitle:"How can we help?",quick1:"ID and certificate assistance",quick1sub:"Aadhaar, voter ID and certificates",quick2:"Government application support",quick2sub:"Licences, ration card and schemes",quick3:"Education and exam forms",quick3sub:"Scholarships and exam applications",quick4:"Simple WhatsApp enquiry",quick4sub:"Tell us what service you need",servicesTitle:"Services we can help with",servicesIntro:"Choose a category and contact us on WhatsApp to ask about the process, documents and applicable charges.",s1:"Aadhaar assistance",d1:"Address update guidance and related online requests.",s2:"Voter ID",d2:"New registration and correction application assistance.",s3:"Ration card",d3:"New card and eligible member addition assistance.",s4:"Certificates",d4:"Income, residence and other available certificate services.",s5:"Business licences",d5:"Trade, food (FSSAI) and labour-related licence assistance.",s6:"Scholarships & exams",d6:"Scholarship forms, exam registrations and application help.",s7:"Passport assistance",d7:"Appointment and application form guidance.",s8:"MeeSeva services",d8:"Assistance with available MeeSeva-related applications.",s9:"Other online services",d9:"Ask us about other forms and online application support.",stepsTitle:"Contact us in 3 easy steps",stepsIntro:"Start with a message. We'll explain the next steps before you proceed.",step1:"Choose your service",step1d:"Find the service category you need on this page.",step2:"Message on WhatsApp",step2d:"Send your question and ask which documents may be required.",step3:"Confirm before applying",step3d:"Confirm process, official fees and service charges before sharing documents or paying.",contactTitle:"Need help with an online service?",contactText:"Message Lucky MeeSeva on WhatsApp to get started.",contactBtn:"🟢 Chat on WhatsApp",footerSub:"Online service assistance • Hyderabad, Telangana",footerNote:"Always verify official requirements and fees. Never share OTPs or passwords.",floatWhatsApp:"WhatsApp"},
+te:{tagline:"ఆన్‌లైన్ సేవలు • హైదరాబాద్",navWhatsApp:"వాట్సాప్‌లో సంప్రదించండి ↗",eyebrow:"● సహాయక సేవ • సులభమైన సంప్రదింపు",headline:"మీ ఆన్‌లైన్ సేవలు ఇప్పుడు మరింత సులభం.",intro:"దరఖాస్తు లేదా ఆన్‌లైన్ సేవ కోసం సహాయం కావాలా? క్రింది సేవలను చూడండి, Lucky MeeSevaకు వాట్సాప్‌లో సందేశం పంపండి. హైదరాబాద్ అంతటా వినియోగదారులకు సహాయం అందిస్తాము.",heroWhatsApp:"🟢 వాట్సాప్‌లో సంప్రదించండి",viewServices:"సేవలను చూడండి ↓",notice:"ఇది స్వతంత్ర ఆన్‌లైన్ సేవల సహాయం మాత్రమే. Lucky MeeSeva అధికారిక ప్రభుత్వ MeeSeva వెబ్‌సైట్ కాదు. దరఖాస్తులు, ఆమోదాలు సంబంధిత శాఖ నిబంధనలకు లోబడి ఉంటాయి.",quickTitle:"మేము ఎలా సహాయం చేయగలం?",quick1:"గుర్తింపు పత్రాలు, సర్టిఫికెట్లు",quick1sub:"ఆధార్, ఓటర్ ID, సర్టిఫికెట్లు",quick2:"ప్రభుత్వ దరఖాస్తుల సహాయం",quick2sub:"లైసెన్సులు, రేషన్ కార్డు, పథకాలు",quick3:"విద్య, పరీక్షల దరఖాస్తులు",quick3sub:"స్కాలర్‌షిప్‌లు, పరీక్షల దరఖాస్తులు",quick4:"సులభమైన వాట్సాప్ విచారణ",quick4sub:"మీకు కావాల్సిన సేవను తెలియజేయండి",servicesTitle:"మేము సహాయం చేసే సేవలు",servicesIntro:"సేవను ఎంచుకుని, విధానం, అవసరమైన పత్రాలు, వర్తించే ఛార్జీల గురించి వాట్సాప్‌లో అడగండి.",s1:"ఆధార్ సహాయం",d1:"చిరునామా మార్పు మార్గదర్శకం, సంబంధిత ఆన్‌లైన్ అభ్యర్థనలు.",s2:"ఓటర్ ID",d2:"కొత్త నమోదు, సవరణ దరఖాస్తుల సహాయం.",s3:"రేషన్ కార్డు",d3:"కొత్త కార్డు, అర్హులైన సభ్యుల చేర్పు సహాయం.",s4:"సర్టిఫికెట్లు",d4:"ఆదాయం, నివాసం మరియు అందుబాటులో ఉన్న ఇతర సర్టిఫికెట్లు.",s5:"వ్యాపార లైసెన్సులు",d5:"ట్రేడ్, ఫుడ్ (FSSAI), లేబర్ లైసెన్సుల సహాయం.",s6:"స్కాలర్‌షిప్‌లు, పరీక్షలు",d6:"స్కాలర్‌షిప్ ఫారాలు, పరీక్షల నమోదు, దరఖాస్తుల సహాయం.",s7:"పాస్‌పోర్ట్ సహాయం",d7:"అపాయింట్‌మెంట్, దరఖాస్తు ఫారం మార్గదర్శకం.",s8:"MeeSeva సేవలు",d8:"అందుబాటులో ఉన్న MeeSeva సంబంధిత దరఖాస్తుల సహాయం.",s9:"ఇతర ఆన్‌లైన్ సేవలు",d9:"ఇతర ఫారాలు, ఆన్‌లైన్ దరఖాస్తుల సహాయం గురించి అడగండి.",stepsTitle:"3 సులభమైన దశల్లో సంప్రదించండి",stepsIntro:"ముందుగా సందేశం పంపండి. తదుపరి విధానాన్ని వివరిస్తాము.",step1:"సేవను ఎంచుకోండి",step1d:"ఈ పేజీలో మీకు కావాల్సిన సేవను కనుగొనండి.",step2:"వాట్సాప్‌లో సందేశం పంపండి",step2d:"మీ ప్రశ్న పంపి అవసరమైన పత్రాల గురించి అడగండి.",step3:"దరఖాస్తుకు ముందు నిర్ధారించండి",step3d:"పత్రాలు పంపే ముందు లేదా చెల్లించే ముందు విధానం, అధికారిక ఫీజులు, సేవా ఛార్జీలు నిర్ధారించండి.",contactTitle:"ఆన్‌లైన్ సేవ కోసం సహాయం కావాలా?",contactText:"ప్రారంభించడానికి Lucky MeeSevaకు వాట్సాప్ సందేశం పంపండి.",contactBtn:"🟢 వాట్సాప్ చాట్",footerSub:"ఆన్‌లైన్ సేవల సహాయం • హైదరాబాద్, తెలంగాణ",footerNote:"అధికారిక నిబంధనలు, ఫీజులు నిర్ధారించండి. OTPలు లేదా పాస్‌వర్డ్‌లు ఎప్పుడూ పంచుకోవద్దు.",floatWhatsApp:"వాట్సాప్"},
+hi:{tagline:"ऑनलाइन सेवाएँ • हैदराबाद",navWhatsApp:"WhatsApp पर संपर्क करें ↗",eyebrow:"● मददगार सेवा • आसान संपर्क",headline:"ऑनलाइन सेवाओं में मदद, अब आसान।",intro:"किसी आवेदन या ऑनलाइन सेवा में मदद चाहिए? नीचे सेवाएँ देखें और Lucky MeeSeva को WhatsApp संदेश भेजें। हम हैदराबाद भर के ग्राहकों की सहायता करते हैं।",heroWhatsApp:"🟢 WhatsApp पर संपर्क करें",viewServices:"सेवाएँ देखें ↓",notice:"यह स्वतंत्र ऑनलाइन सेवा सहायता है। Lucky MeeSeva सरकारी MeeSeva की आधिकारिक वेबसाइट नहीं है। आवेदन और स्वीकृति संबंधित विभाग के नियमों पर निर्भर हैं।",quickTitle:"हम कैसे मदद कर सकते हैं?",quick1:"पहचान पत्र और प्रमाणपत्र",quick1sub:"आधार, वोटर ID और प्रमाणपत्र",quick2:"सरकारी आवेदन सहायता",quick2sub:"लाइसेंस, राशन कार्ड और योजनाएँ",quick3:"शिक्षा और परीक्षा फॉर्म",quick3sub:"छात्रवृत्ति और परीक्षा आवेदन",quick4:"आसान WhatsApp पूछताछ",quick4sub:"बताएँ कि आपको कौन-सी सेवा चाहिए",servicesTitle:"जिन सेवाओं में हम मदद कर सकते हैं",servicesIntro:"सेवा चुनें और प्रक्रिया, दस्तावेज़ तथा लागू शुल्क पूछने के लिए WhatsApp पर संपर्क करें।",s1:"आधार सहायता",d1:"पता अपडेट मार्गदर्शन और संबंधित ऑनलाइन अनुरोध।",s2:"वोटर ID",d2:"नए पंजीकरण और सुधार आवेदन में सहायता।",s3:"राशन कार्ड",d3:"नया कार्ड और पात्र सदस्य जोड़ने में सहायता।",s4:"प्रमाणपत्र",d4:"आय, निवास और उपलब्ध अन्य प्रमाणपत्र सेवाएँ।",s5:"व्यावसायिक लाइसेंस",d5:"ट्रेड, खाद्य (FSSAI) और श्रम लाइसेंस सहायता।",s6:"छात्रवृत्ति और परीक्षाएँ",d6:"छात्रवृत्ति फॉर्म, परीक्षा पंजीकरण और आवेदन सहायता।",s7:"पासपोर्ट सहायता",d7:"अपॉइंटमेंट और आवेदन फॉर्म मार्गदर्शन।",s8:"MeeSeva सेवाएँ",d8:"उपलब्ध MeeSeva-संबंधित आवेदनों में सहायता।",s9:"अन्य ऑनलाइन सेवाएँ",d9:"अन्य फॉर्म और ऑनलाइन आवेदन सहायता के बारे में पूछें।",stepsTitle:"3 आसान चरणों में संपर्क करें",stepsIntro:"संदेश से शुरुआत करें। आगे की प्रक्रिया समझाई जाएगी।",step1:"अपनी सेवा चुनें",step1d:"इस पेज पर अपनी ज़रूरत की सेवा खोजें।",step2:"WhatsApp पर संदेश भेजें",step2d:"अपना सवाल भेजें और ज़रूरी दस्तावेज़ पूछें।",step3:"आवेदन से पहले पुष्टि करें",step3d:"दस्तावेज़ भेजने या भुगतान करने से पहले प्रक्रिया, सरकारी शुल्क और सेवा शुल्क की पुष्टि करें।",contactTitle:"ऑनलाइन सेवा में मदद चाहिए?",contactText:"शुरू करने के लिए Lucky MeeSeva को WhatsApp संदेश भेजें।",contactBtn:"🟢 WhatsApp चैट",footerSub:"ऑनलाइन सेवा सहायता • हैदराबाद, तेलंगाना",footerNote:"आधिकारिक नियम और शुल्क जाँचें। OTP या पासवर्ड कभी साझा न करें।",floatWhatsApp:"WhatsApp"}
+};
+function updateLanguage(lang){
+  const dict=messages[lang]||messages.en;
+  document.documentElement.lang=lang==="te"?"te":lang==="hi"?"hi":"en";
+  document.querySelectorAll("[data-i18n]").forEach(el=>{const key=el.dataset.i18n;if(dict[key])el.textContent=dict[key]});
+  const text=lang==="te"?"నమస్కారం Lucky MeeSeva, నాకు ఆన్‌లైన్ సేవ కోసం సహాయం కావాలి.":lang==="hi"?"नमस्ते Lucky MeeSeva, मुझे एक ऑनलाइन सेवा में मदद चाहिए।":"Hello Lucky MeeSeva, I need help with an online service.";
+  const href="https://wa.me/"+phone+"?text="+encodeURIComponent(text);
+  document.querySelectorAll("[data-wa]").forEach(a=>a.href=href);
+  document.title=lang==="te"?"Lucky MeeSeva | హైదరాబాద్ ఆన్‌లైన్ సేవలు":lang==="hi"?"Lucky MeeSeva | हैदराबाद ऑनलाइन सेवाएँ":"Lucky MeeSeva | Online Services in Hyderabad";
+}
+document.getElementById("language").addEventListener("change",e=>updateLanguage(e.target.value));
+document.getElementById("year").textContent=new Date().getFullYear();
+updateLanguage("en");
+</script>
+</body>
+</html>
